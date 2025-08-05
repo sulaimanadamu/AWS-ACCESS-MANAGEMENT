@@ -166,7 +166,7 @@ Unlike IAM users, a role does not have permanent passwords or access keys.
 Instead, it provides temporary access credentials — which include an access key, secret key, and a session token — that are generated and managed by AWS STS (Security Token Service). this session expires with time.
 
 We will create a role and make it trust an EC2 instance (an amazon service)
-
+```
                                                               amazon services
                                                         **************************
                 trust         ++++++++++++++           |            EC2           |            
@@ -182,6 +182,8 @@ IAM EXTERNAL ACCOUNT <--------|             |          |                        
                                      .
                                     \/
                                   ANOTHER ROLE
+```
+
 
 ### PRACTICAL CREATION ON ROLE AND CREATION OF TRUST.
 
