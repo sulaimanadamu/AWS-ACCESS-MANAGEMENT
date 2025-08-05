@@ -185,7 +185,51 @@ IAM EXTERNAL ACCOUNT <--------|             |          |                        
 ```
 
 
-### PRACTICAL CREATION ON ROLE AND CREATION OF TRUST.
+### PRACTICAL CREATION ON ROLE AND TRUST.
+Trust is simply the service, external aws account, user or anything that can access the permissions in our ROLE.
+Trust has to be definded in the trust policy and permissions are provide in the permission policy while creating the ROLE.
+
+- select role from IAM side bar and click on create role
+![select role on side bar](./images/select-iam-role.png)
+
+![click create role](./images/select-create-iam-role.png)
+
+- create trust by choosing from the six possible trustees.
+![create trust](./images/select-role-trust.png)
+
+- our trust in this case is an EC2 instance which is a service. click the search box, search for the service, select it and click next.
+
+![search for service and click next](./images/select-service-to-trust.png)
+
+![make EC2 TRUST](./images/make-ec2-trust.png)
+
+- Create the permission for the role, here we will just create permission for an S3 bucket.
+
+![permission for s3 bucket](./images/select-role-permission.png)
+
+- review all the permission and name the ROLE.
+
+![reviewing roles](./images/naming-group-with-policy.png)
+
+- viewing permissions of the role
+
+![permission of the role](./images/viewing-role-permission.png)
+
+- Attach the created role to an existing EC2, the trust policy was that any EC2 can connect have access to s3 buckets as long as it has this role attach to it. so lets attach this role to it.
+
+![attach role to service(ec2 instance)](./images/add-user-to-group.png)
+
+- select the role to attach to the EC2 
+
+![role to attach to EC2](./images/select-role-trust.png)
+
+- confirm role attachment since this is your first time.
+
+![confirm role attachment](./images/confirm-role-attachment.png)
+
+- delete role
+
+![delete the role](./images/delete-a-role.png)
 
 
 
