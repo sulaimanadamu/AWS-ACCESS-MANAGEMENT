@@ -237,5 +237,5 @@ Trust has to be definded in the trust policy and permissions are provide in the 
 
   * **Understanding IAM:** IAM serves as the security foundation for AWS resources, controlling access and permissions.
   * **Security Importance:** IAM ensures data protection, compliance, and prevents unauthorized access.
-  * **Policy Creation:** Participants learned to craft IAM policies to regulate resource access effectively.
-  * **Practical Application:** Hands-on exercises equipped participants to set up IAM users, groups, and roles, enhancing their real-world IAM implementation skills.
+  * **Policy Creation:** learnt to craft IAM policies to regulate resource access effectively.
+  * **Practical Application:** Hands-on exercises to set up IAM users, groups, and roles, enhancing real-world IAM implementation skills.
